@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="link logo">
+          <svg class="logo__icon" width="37" height="37">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+          <p class="logo__name">
+            Dashboard <span class="logo__version">v.01</span>
+          </p>
+        </a>
+
+        <button type="button" id="mobile-menu-btn" class="header__menu-btn">
+          <svg class="header__menu-icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="mobile-menu menu visually-hidden">
+        <button
+          type="button"
+          id="mobile-menu-btn-close"
+          class="mobile-menu__btn-close"
+        >
+          <svg class="header__menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <a href="#" class="link logo">
+          <svg class="logo__icon" width="37" height="37">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+          <p class="logo__name">
+            Dashboard <span class="logo__version">v.01</span>
+          </p>
+        </a>
+
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-key-square"></use>
+                </svg>
+                Dashboard
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-d-square"></use>
+                </svg>
+                Product
+                <svg
+                  class="navigation__icon navigation__icon--right"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link current">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-user-square"></use>
+                </svg>
+                Customers
+                <svg
+                  class="navigation__icon navigation__icon--right"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-chevron-white"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-wallet-money"></use>
+                </svg>
+                Income
+                <svg
+                  class="navigation__icon navigation__icon--right"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-discount-shape"></use>
+                </svg>
+                Promote
+                <svg
+                  class="navigation__icon navigation__icon--right"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-message-question"></use>
+                </svg>
+                Help
+                <svg
+                  class="navigation__icon navigation__icon--right"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#" class="link user">
+          <img
+            class="user__img"
+            src="./images/Ellipse 8.webp"
+            alt="user image"
+            width="42"
+            height="42"
+          />
+          <div class="user__info">
+            <p class="user__name">Evano</p>
+            <p class="user__profession">Project Manager</p>
+          </div>
+        </a>
+      </section>
+
+      <section class="desktop-menu menu">
+        <a href="#" class="link logo">
+          <svg class="logo__icon" width="37" height="37">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+          <p class="logo__name">
+            Dashboard <span class="logo__version">v.01</span>
+          </p>
+        </a>
+
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-key-square"></use>
+                </svg>
+                Dashboard
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-d-square"></use>
+                </svg>
+                Product
+                <svg
+                  class="navigation__icon navigation__icon--right"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link current">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-user-square"></use>
+                </svg>
+                Customers
+                <svg
+                  class="navigation__icon navigation__icon--right"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-chevron-white"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-wallet-money"></use>
+                </svg>
+                Income
+                <svg
+                  class="navigation__icon navigation__icon--right"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-discount-shape"></use>
+                </svg>
+                Promote
+                <svg
+                  class="navigation__icon navigation__icon--right"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-message-question"></use>
+                </svg>
+                Help
+                <svg
+                  class="navigation__icon navigation__icon--right"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#" class="link user">
+          <img
+            class="user__img"
+            src="./images/Ellipse 8.webp"
+            alt="user image"
+            width="42"
+            height="42"
+          />
+          <div class="user__info">
+            <p class="user__name">Evano</p>
+            <p class="user__profession">Project Manager</p>
+          </div>
+        </a>
+      </section>
+
+      <section class="customers">
+        <h2 class="customers__heading">Hello Evano 👋🏼,</h2>
+
+        <div class="customers__container">
+          <div class="customers__header">
+            <div class="customers__header-left">
+              <h3 class="customers__title">All Customers</h3>
+              <p class="customers__subtitle">Active Members</p>
+            </div>
+            <div class="customers__search">
+              <input
+                type="text"
+                placeholder="Search"
+                class="customers__search-input"
+              />
+              <svg class="customers__search-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-search"></use>
+              </svg>
+            </div>
+          </div>
+
+          <table class="customers__table">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Customer Name">Jane Cooper</td>
+                <td data-label="Company">Microsoft</td>
+                <td data-label="Phone Number">(225) 555-0118</td>
+                <td data-label="Email">jane@microsoft.com</td>
+                <td data-label="Country">United States</td>
+                <td data-label="Status">
+                  <span class="status status--active">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name">Floyd Miles</td>
+                <td data-label="Company">Yahoo</td>
+                <td data-label="Phone Number">(205) 555-0100</td>
+                <td data-label="Email">floyd@yahoo.com</td>
+                <td data-label="Country">Kiribati</td>
+                <td data-label="Status">
+                  <span class="status status--inactive">Inactive</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name">Ronald Richards</td>
+                <td data-label="Company">Adobe</td>
+                <td data-label="Phone Number">(302) 555-0107</td>
+                <td data-label="Email">ronald@adobe.com</td>
+                <td data-label="Country">Israel</td>
+                <td data-label="Status">
+                  <span class="status status--inactive">Inactive</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name">Marvin McKinney</td>
+                <td data-label="Company">Tesla</td>
+                <td data-label="Phone Number">(252) 555-0126</td>
+                <td data-label="Email">marvin@tesla.com</td>
+                <td data-label="Country">Iran</td>
+                <td data-label="Status">
+                  <span class="status status--active">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name">Jerome Bell</td>
+                <td data-label="Company">Google</td>
+                <td data-label="Phone Number">(629) 555-0129</td>
+                <td data-label="Email">jerome@google.com</td>
+                <td data-label="Country">Réunion</td>
+                <td data-label="Status">
+                  <span class="status status--active">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name">Kathryn Murphy</td>
+                <td data-label="Company">Microsoft</td>
+                <td data-label="Phone Number">(406) 555-0120</td>
+                <td data-label="Email">kathryn@microsoft.com</td>
+                <td data-label="Country">Curaçao</td>
+                <td data-label="Status">
+                  <span class="status status--active">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name">Jacob Jones</td>
+                <td data-label="Company">Yahoo</td>
+                <td data-label="Phone Number">(208) 555-0112</td>
+                <td data-label="Email">jacob@yahoo.com</td>
+                <td data-label="Country">Brazil</td>
+                <td data-label="Status">
+                  <span class="status status--active">Active</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name">Kristin Watson</td>
+                <td data-label="Company">Facebook</td>
+                <td data-label="Phone Number">(704) 555-0127</td>
+                <td data-label="Email">kristin@facebook.com</td>
+                <td data-label="Country">Åland Islands</td>
+                <td data-label="Status">
+                  <span class="status status--inactive">Inactive</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="customers__pagination">
+            <p class="customers__pagination-info">
+              Showing data 1 to 8 of 256K entries
+            </p>
+            <div class="customers__pagination-controls">
+              <button class="pagination-btn">&lt;</button>
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <button class="pagination-btn">4</button>
+              <button class="pagination-btn pagination-btn--dots">...</button>
+              <button class="pagination-btn">40</button>
+              <button class="pagination-btn">&gt;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

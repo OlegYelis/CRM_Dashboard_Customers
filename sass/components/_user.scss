@@ -1,0 +1,31 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: auto auto 0;
+}
+
+.user__img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.user__name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--heading-text-color);
+}
+
+.user__profession {
+  font-size: 12px;
+  font-weight: 400;
+  color: #757575;
+}
+
+@include tablet {
+  .user {
+    margin: auto 0 0 0;
+  }
+}

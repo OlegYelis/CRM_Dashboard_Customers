@@ -1,0 +1,56 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px 5vh;
+  background-color: #ffffff;
+  box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
+  z-index: 1;
+
+  @include tablet {
+    width: 350px;
+    padding: 36px 28px 76px;
+  }
+
+  @include desktop {
+    width: 306px;
+    left: auto;
+  }
+}
+
+.desktop-menu {
+  display: none;
+  @include desktop {
+    display: flex;
+  }
+}
+
+.mobile-menu {
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobile-menu__btn-close {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+}

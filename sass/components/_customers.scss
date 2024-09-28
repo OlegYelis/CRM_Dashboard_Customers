@@ -1,0 +1,408 @@
+.customers {
+  margin-left: 0;
+  padding: 20px 0;
+
+  @include tablet {
+    margin-left: 0;
+    padding: 30px 0;
+  }
+
+  @include desktop {
+    margin-left: 377px;
+    padding: 41px 0 258px;
+  }
+}
+
+.customers__heading {
+  font-weight: 500;
+  line-height: auto;
+
+  font-size: 18px;
+  margin: 0 0 20px;
+
+  @include tablet {
+    font-size: 20px;
+    margin: 0 0 30px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    margin: 0 0 51px;
+  }
+}
+
+.customers__container {
+  background-color: #ffffff;
+  box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
+
+  border-radius: 10px;
+  padding: 15px 0;
+
+  @include tablet {
+    border-radius: 20px;
+    padding: 20px 0;
+  }
+
+  @include desktop {
+    width: 968px;
+    border-radius: 30px;
+    padding: 30px 0 40px;
+  }
+}
+
+.customers__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding: 0 15px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include tablet {
+    padding: 0 20px 30px;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  @include desktop {
+    padding: 0 53px 40px 38px;
+  }
+}
+
+.customers__header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.customers__title {
+  font-weight: 600;
+  line-height: auto;
+  margin-bottom: 7px;
+  color: #000000;
+
+  font-size: 16px;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include desktop {
+    font-size: 22px;
+  }
+}
+
+.customers__subtitle {
+  font-weight: 400;
+  line-height: auto;
+  color: #16c098;
+
+  font-size: 11px;
+
+  @include tablet {
+    font-size: 12px;
+  }
+
+  @include desktop {
+    font-size: 14px;
+  }
+}
+
+.customers__search {
+  position: relative;
+
+  margin-top: 15px;
+  width: 100%;
+
+  @include tablet {
+    margin-top: 0;
+    width: fit-content;
+  }
+}
+
+.customers__search-input {
+  outline: none;
+  border: none;
+  height: 38px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: auto;
+  padding: 10px 15px 10px 40px;
+  background-color: #f9fbff;
+
+  width: 100%;
+
+  @include desktop {
+    width: 216px;
+  }
+
+  &::placeholder {
+    color: #b5b7c0;
+  }
+}
+
+.customers__search-icon {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+
+.customers__table {
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0 10px;
+
+  @media (max-width: 767px) {
+    display: block;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      display: block;
+    }
+
+    tr {
+      display: block;
+      width: 95%;
+      margin: 0 auto 5px;
+      border: 1px solid #eeeeee;
+      border-radius: 10px;
+      padding: 0 10px;
+    }
+
+    td {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: none;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #eeeeee;
+      }
+
+      &::before {
+        content: attr(data-label);
+        font-weight: 600;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  @include tablet {
+    display: table;
+
+    th,
+    td {
+      border-bottom: 1px solid #eeeeee;
+    }
+  }
+
+  th {
+    text-align: left;
+    font-weight: 500;
+    line-height: auto;
+    color: #b5b7c0;
+
+    font-size: 10px;
+    padding: 0 5px 8px;
+
+    @include tablet {
+      font-size: 12px;
+      padding: 0 5px 10px;
+    }
+
+    @include desktop {
+      font-size: 14px;
+      padding: 0 10px 14px;
+    }
+  }
+
+  td {
+    font-weight: 500;
+    line-height: auto;
+    color: #292d32;
+    background-color: #ffffff;
+    text-align: left;
+
+    font-size: 10px;
+    padding: 12px 5px;
+
+    @include tablet {
+      font-size: 12px;
+      padding: 15px 5px;
+    }
+
+    @include desktop {
+      font-size: 14px;
+      padding: 20px 10px;
+    }
+  }
+
+  th:first-child,
+  td:first-child {
+    @include tablet {
+      padding-left: 20px;
+    }
+
+    @include desktop {
+      padding-left: 38px;
+    }
+  }
+
+  th:last-child,
+  td:last-child {
+    @include tablet {
+      padding-right: 20px;
+    }
+
+    @include desktop {
+      padding-right: 22px;
+    }
+  }
+
+  .status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    line-height: auto;
+    border-radius: 4px;
+
+    font-size: 10px;
+    width: 60px;
+    height: 22px;
+
+    @include tablet {
+      font-size: 12px;
+      width: 70px;
+      height: 24px;
+    }
+
+    @include desktop {
+      font-size: 14px;
+      width: 80px;
+      height: 29px;
+    }
+  }
+}
+
+.status--active {
+  border: 1px solid #00b087;
+  background-color: rgba(22, 192, 152, 0.38);
+  color: #008767;
+}
+
+.status--inactive {
+  border: 1px solid #df0404;
+  background-color: #ffc5c5;
+  color: #df0404;
+}
+
+.customers__pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 15px 0;
+  flex-direction: column;
+  gap: 15px;
+
+  @include tablet {
+    padding: 20px 20px 0;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  @include desktop {
+    padding: 30px 40px 0 38px;
+  }
+}
+
+.customers__pagination-info {
+  font-weight: 500;
+  line-height: auto;
+  color: #b5b7c0;
+
+  font-size: 11px;
+
+  @include tablet {
+    font-size: 12px;
+  }
+
+  @include desktop {
+    font-size: 14px;
+  }
+}
+
+.customers__pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  @include tablet {
+    gap: 8px;
+  }
+
+  @include desktop {
+    gap: 12px;
+  }
+}
+
+.pagination-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  line-height: auto;
+  color: #404b52;
+  background-color: #f5f5f5;
+  border: 1px solid #eeeeee;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 20px;
+  height: 20px;
+  font-size: 9px;
+
+  @include tablet {
+    width: 22px;
+    height: 22px;
+    font-size: 10px;
+  }
+
+  @include desktop {
+    width: 25px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  &:hover,
+  &.active {
+    background-color: #5932ea;
+    border-color: #5932ea;
+    color: #ffffff;
+  }
+}
+
+.pagination-btn--dots {
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    background-color: inherit;
+    border-color: inherit;
+    color: inherit;
+  }
+}

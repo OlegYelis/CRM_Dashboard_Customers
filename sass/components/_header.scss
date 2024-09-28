@@ -1,0 +1,39 @@
+.header {
+  padding: 10px 0;
+  border-radius: 0 0 20px 20px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  background-color: #ffffff;
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  @include tablet {
+    padding: 15px 0;
+    border-radius: 0 0 20px 20px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.header__menu-icon {
+  fill: var(--heading-text-color);
+}
+
+.header__menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
